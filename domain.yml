@@ -1,0 +1,217 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - cold
+  - cold_sym
+  - cold_confirm
+  - med_not_helped
+  - med_helped
+  - not_well
+  - well
+  - fever_sym
+  - fracture_sym
+  - fracture_details
+  - fracture_accepted
+  - headache
+  - migrane
+  - cluster_headache
+  - tension_headache
+  - rash_symptoms
+  - rash_medication
+  - injury_symptoms
+  - injury_first_aid
+  - sore_throat_symptoms
+  - sore_throat_medication
+  - stomach_pain_symptoms
+  - stomach_pain_remedy
+  - allergy_symptoms
+  - allergy_management
+  - cough_symptoms
+  - cough_medication
+  - weight_loss_tips
+  - diet_recommendations
+  - exercise_suggestions
+
+actions:
+  - action_new_sym
+  - utter_greet
+  - utter_goodbye
+  - utter_iamabot
+  - utter_cold_sym
+  - utter_cold_med
+  - utter_feedback
+  - utter_med_not_helped
+  - utter_med_helped
+  - utter_not_well
+  - utter_well
+  - utter_fever_med
+  - utter_fracture_sym
+  - utter_fracture_details
+  - utter_fracture_confirm
+  - utter_headache_type
+  - utter_migrane
+  - utter_tension_headache
+  - utter_cluster_headache
+  - action_gather_symptoms
+  - utter_gather_symptoms
+  - utter_rash_medication
+  - utter_injury_symptoms
+  - utter_injury_first_aid
+  - utter_sore_throat_symptoms
+  - utter_sore_throat_medication
+  - utter_stomach_pain_symptoms
+  - utter_stomach_pain_remedy
+  - utter_allergy_symptoms
+  - utter_allergy_management
+  - utter_cough_symptoms
+  - utter_cough_medication
+  - utter_weight_loss_tips
+  - utter_diet_recommendations
+  - utter_exercise_suggestions
+  - utter_collect_feedback
+
+responses:
+  utter_greet:
+    - text: "Hey! I am your medical assistant. How can i help you"
+
+  utter_gather_symptoms:
+    - text: "I understand you have some symptoms. Can you please describe them in more detail?"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am your healthcare assistant"
+
+  utter_cold_sym:
+    - text: "Okay, this is a symptom of cold, do you have cold?"
+
+  utter_cold_med:
+    - text: "You should take a spoon full of benadryl after your meal."
+
+  utter_feedback:
+    - text: "let me know if you are feeling better"
+
+  utter_med_not_helped:
+    - text: "Ok, you should consult a doctor."
+
+  utter_med_helped:
+    - text: "Ok, so better to carry on medicine for 2 more days"
+
+  utter_not_well:
+    - text: "Okay, can you tell me what's wrong? what are your symptoms?"
+
+  utter_well:
+    - text: "great to know. how can i assist you then."
+
+  utter_fracture_sym:
+    - text: "Okay, did you get hurt, or is it a sudden aching?"
+
+  utter_fracture_details:
+    - text: "Ok, is there swelling, physical deformity, or bleeding at the aching region."
+
+  utter_fracture_confirm:
+    - text: "Okay, it is a common symptom of fracture, you should consult a doctor."
+
+  utter_headache_type:
+    - text: "What kind of headache do you have: 1. Migraine headache - intense throbbing pain on just one side of the head. 2. Cluster headaches - severe and recurrent headaches 3. Tension Headache - Occasional"
+
+  utter_migrane:
+    - text: "Symptom noted. Migraines tend to be recurrent, and each attack may last up to 3 days; otherwise, consult a doctor."
+
+  utter_cluster_headache:
+    - text: "Symptom noted. Attacks tend to occur in daily clusters that can persist for weeks or months. They typically take place at the same time of day, which can often be a couple of hours after falling asleep at night. Better to consult a doctor."
+
+  utter_tension_headache:
+    - text: "Symptom noted. The cause of tension headaches is unclear, but stress, anxiety, and depression are common triggers. If it happens regularly, then consult a doctor."
+
+  utter_cough_med:
+    - text: "For cough, you can try over-the-counter cough syrup such as [brand name]. Remember to follow the recommended dosage."
+
+  utter_sore_throat_med:
+    - text: "For a sore throat, you can use throat lozenges and gargle with warm salt water to soothe irritation."
+
+  utter_emergency:
+    - text: "If you are experiencing severe symptoms such as difficulty breathing, chest pain, or sudden loss of consciousness, please call 911 immediately."
+
+  utter_followup_question:
+    - text: "Have you had any recent exposure to someone with similar symptoms?"
+
+  utter_seek_medical_attention:
+    - text: "I'm not a doctor, but your symptoms sound serious. It's important to consult a healthcare professional as soon as possible."
+
+  utter_health_tips:
+    - text: "Remember to stay hydrated, get plenty of rest, and maintain a healthy diet to boost your immune system."
+
+  utter_collect_feedback:
+    - text: "We're constantly working to improve. How would you rate the assistance you received today? (On a scale of 1 to 5)"
+
+  utter_cold:
+    - text: "It sounds like you might have a cold. Rest and drink fluids to help your body recover."
+
+  utter_cold_confirm:
+    - text: "Thank you for confirming. Is there anything specific you'd like to know about dealing with a cold?"
+
+  utter_fever_sym:
+    - text: "Fever can be a sign of an underlying issue. It's important to monitor your temperature and consult a doctor if it persists."
+
+  utter_fever_med:
+    - text: "For fever, you can take over-the-counter medicine like acetaminophen or ibuprofen. Follow the recommended dosage."
+
+  utter_headache:
+    - text: "I'm sorry to hear about your headache. Can you describe the type of headache you're experiencing?"
+
+  utter_headache_details:
+    - text: "Understanding the details of your headache will help me provide better advice. Is it throbbing, constant, or sharp?"
+
+  utter_rash_symptoms:
+    - text: "Rashes can have various causes. Can you describe the appearance and any other symptoms of your rash?"
+
+  utter_rash_medication:
+    - text: "For rashes, you can apply over-the-counter hydrocortisone cream. If it persists, consult a dermatologist."
+
+  utter_injury_symptoms:
+    - text: "I'm sorry to hear about your injury. Can you describe the type and location of the injury?"
+
+  utter_injury_first_aid:
+    - text: "In case of injury, remember RICE: Rest, Ice, Compression, and Elevation. Seek medical attention if necessary."
+
+  utter_sore_throat_symptoms:
+    - text: "A sore throat can be uncomfortable. Is it accompanied by other symptoms like fever or cough?"
+
+  utter_sore_throat_medication:
+    - text: "You can try soothing your sore throat with warm tea and honey. If it persists, consider lozenges or consult a doctor."
+
+  utter_stomach_pain_symptoms:
+    - text: "Stomach pain can have many causes. Can you describe the type of pain and any associated symptoms?"
+
+  utter_stomach_pain_remedy:
+    - text: "For mild stomach pain, you can try drinking ginger tea or taking antacids. Consult a doctor for persistent pain."
+
+  utter_allergy_symptoms:
+    - text: "Allergies can be bothersome. Can you specify the allergen and describe your symptoms in detail?"
+
+  utter_allergy_management:
+    - text: "To manage allergies, avoid triggers and consider antihistamines. Severe allergies require an epinephrine auto-injector."
+
+  utter_cough_symptoms:
+    - text: "Coughs can be due to various reasons. Is it dry or productive (with mucus)? Any other associated symptoms?"
+
+  utter_cough_medication:
+    - text: "For cough, you can try cough syrup or lozenges. If it persists or worsens, consult a healthcare professional."
+
+  utter_weight_loss_tips:
+    - text: "Weight loss is a goal for many. It's important to combine a balanced diet with regular exercise for sustainable results."
+
+  utter_diet_recommendations:
+    - text: "A balanced diet includes fruits, vegetables, lean protein, and whole grains. Avoid excessive processed foods and sugars."
+
+  utter_exercise_suggestions:
+    - text: "Regular exercise is essential for maintaining good health. Consider activities like walking, jogging, or yoga."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
