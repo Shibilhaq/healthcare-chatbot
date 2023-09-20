@@ -1,0 +1,145 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: not_well_path
+    steps:
+      - intent: not_well
+      - action: utter_not_well
+
+  - story: well_path
+    steps:
+      - intent: well
+      - action: utter_well
+
+  - story: cold_sym_path
+    steps:
+      - intent: cold_sym
+      - action: utter_cold_sym
+      - intent: cold_confirm
+      - action: utter_cold_med
+      - action: utter_feedback
+
+  - story: med_not_helped_path
+    steps:
+      - intent: med_not_helped
+      - action: utter_med_not_helped
+
+  - story: med_helped_path
+    steps:
+      - intent: med_helped
+      - action: utter_med_helped
+
+  - story: fever_sym_path
+    steps:
+      - intent: fever_sym
+      - action: utter_fever_med
+      - action: utter_feedback
+
+  - story: fracture_sym_path
+    steps:
+      - intent: fracture_sym
+      - action: utter_fracture_sym
+      - intent: fracture_accepted
+      - action: utter_fracture_details
+      - intent: fracture_details
+      - action: utter_fracture_confirm
+
+  - story: headache_path
+    steps:
+      - intent: headache
+      - action: utter_headache_type
+
+  - story: migrane_path
+    steps:
+      - intent: migrane
+      - action: utter_migrane
+
+  - story: cluster_headache_path
+    steps:
+      - intent: cluster_headache
+      - action: utter_cluster_headache
+
+  - story: tension_headache_path
+    steps:
+      - intent: tension_headache
+      - action: utter_tension_headache
+
+  - story: rash_symptoms_path
+    steps:
+      - intent: rash_symptoms
+      - action: utter_rash_symptoms
+
+  - story: rash_medication_path
+    steps:
+      - intent: rash_medication
+      - action: utter_rash_medication
+
+  - story: injury_symptoms_path
+    steps:
+      - intent: injury_symptoms
+      - action: utter_injury_symptoms
+
+  - story: injury_first_aid_path
+    steps:
+      - intent: injury_first_aid
+      - action: utter_injury_first_aid
+
+  - story: sore_throat_symptoms_path
+    steps:
+      - intent: sore_throat_symptoms
+      - action: utter_sore_throat_symptoms
+
+  - story: sore_throat_medication_path
+    steps:
+      - intent: sore_throat_medication
+      - action: utter_sore_throat_medication
+
+  - story: stomach_pain_symptoms_path
+    steps:
+      - intent: stomach_pain_symptoms
+      - action: utter_stomach_pain_symptoms
+
+  - story: stomach_pain_remedy_path
+    steps:
+      - intent: stomach_pain_remedy
+      - action: utter_stomach_pain_remedy
+
+  - story: allergy_symptoms_path
+    steps:
+      - intent: allergy_symptoms
+      - action: utter_allergy_symptoms
+
+  - story: allergy_management_path
+    steps:
+      - intent: allergy_management
+      - action: utter_allergy_management
+
+  - story: cough_symptoms_path
+    steps:
+      - intent: cough_symptoms
+      - action: utter_cough_symptoms
+
+  - story: cough_medication_path
+    steps:
+      - intent: cough_medication
+      - action: utter_cough_medication
+
+  - story: weight_loss_tips_path
+    steps:
+      - intent: weight_loss_tips
+      - action: utter_weight_loss_tips
+
+  - story: diet_recommendations_path
+    steps:
+      - intent: diet_recommendations
+      - action: utter_diet_recommendations
+
+  - story: exercise_suggestions_path
+    steps:
+      - intent: exercise_suggestions
+      - action: utter_exercise_suggestions

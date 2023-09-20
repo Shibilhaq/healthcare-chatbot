@@ -1,0 +1,243 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - who are you
+
+  - intent: cold
+    examples: |
+      - I have a cough
+      - I have a cold
+
+  - intent: cold_sym
+    examples: |
+      - My nose is choked
+      - My chest is aching
+      - My nose is itching
+      - My throat is itching
+
+  - intent: cold_confirm
+    examples: |
+      - yes i am having cold and cough
+      - yes i am having cold
+      - yes i am having cough
+      - yes
+      - ya
+
+  - intent: med_not_helped
+    examples: |
+      - No, i am still not felling better after having benadryl.
+      - No, i am still not felling better after having crocin.
+      - i am not feeling better
+      - medicine did not helped me
+      - i am not feeling well
+
+  - intent: med_helped
+    examples: |
+      - medicine helped me
+      - i am feeling better now
+      - it was good medicine
+      - feeling good
+      - i am feeling better
+
+  - intent: not_well
+    examples: |
+      - I am not feeling well
+      - i feel sick
+      - i am sick
+      - i am not well
+
+  - intent: well
+    examples: |
+      - i feel fine
+      - i am feeling fine
+      - i feel great
+      - i feel awesome
+
+  - intent: fever_sym
+    examples: |
+      - My body temperature has raised
+      - I am shivering
+      - I am feeling weak
+      - I have weakness in my body
+      - i am having fever
+      - fever
+
+  - intent: fracture_sym
+    examples: |
+      - my hand is aching
+      - my leg is aching
+      - i have pain in hand
+      - my hand is paining
+      - my joint is aching
+
+  - intent: fracture_details
+    examples: |
+      - it is a mild ache
+      - yes there is a swelling
+      - yes there is a physical deformity
+      - yes it is bleeding
+
+  - intent: fracture_accepted
+    examples: |
+      - yes
+      - yes i think it is fracture
+      - yes it is hurting
+      - it is bleeding
+      - blood is coming out
+
+  - intent: headache
+    examples: |
+      - i have a headache
+      - i am having pain in forehead
+      - i have head pain
+      - pain in head
+
+  - intent: migrane
+    examples: |
+      - i have a migrane headache
+      - migrane headache
+      - migrane
+
+  - intent: cluster_headache
+    examples: |
+      - i have a cluster headache
+      - cluster headache
+      - cluster
+
+  - intent: tension_headache
+    examples: |
+      - i have a tension headache
+      - tension headache
+      - tension
+
+  - intent: rash_symptoms
+    examples: |
+      - My skin has red spots
+      - I'm experiencing itching on my arms
+      - There are bumps on my skin
+      - I have a rash on my back
+
+  - intent: rash_medication
+    examples: |
+      - What can I apply for a rash?
+      - Recommend a cream for skin rashes
+      - Is there any ointment for itching skin?
+      - How can I treat a skin rash at home?
+
+  - intent: injury_symptoms
+    examples: |
+      - I twisted my ankle
+      - My knee hurts after a fall
+      - I have a bruise on my arm
+      - My wrist is swollen and painful
+
+  - intent: injury_first_aid
+    examples: |
+      - What should I do for a sprained ankle?
+      - How to treat a minor burn?
+      - Provide first aid for a cut on the hand
+      - Steps for handling a twisted wrist
+
+  - intent: sore_throat_symptoms
+    examples: |
+      - My throat feels scratchy
+      - I have difficulty swallowing
+      - It hurts when I swallow
+      - My throat is sore and inflamed
+
+  - intent: sore_throat_medication
+    examples: |
+      - Suggest a remedy for a sore throat
+      - What medicine can I take for a throat infection?
+      - Is there a throat spray for pain relief?
+      - How to soothe a sore throat at home?
+
+  - intent: stomach_pain_symptoms
+    examples: |
+      - I have sharp abdominal pain
+      - My stomach hurts after eating
+      - I'm experiencing stomach cramps
+      - My belly feels bloated and painful
+
+  - intent: stomach_pain_remedy
+    examples: |
+      - What can I do for stomachache relief?
+      - Home remedies for stomach pain
+      - How to ease abdominal cramps
+      - Suggest a remedy for indigestion
+
+  - intent: allergy_symptoms
+    examples: |
+      - I have hives on my skin
+      - My eyes are red and itchy
+      - I'm sneezing constantly
+      - I suspect I have a food allergy
+
+  - intent: allergy_management
+    examples: |
+      - How to manage pollen allergies
+      - Tips for coping with pet allergies
+      - What should I do during an allergic reaction?
+      - Is there an antihistamine I can take?
+
+  - intent: cough_symptoms
+    examples: |
+      - I have a persistent cough
+      - My throat is irritated and I cough a lot
+      - I'm coughing up phlegm
+      - Dry cough and sore throat
+
+  - intent: cough_medication
+    examples: |
+      - Recommend a cough syrup
+      - What can I take for a dry cough?
+      - Is there a natural remedy for a persistent cough?
+      - Cough medicine for children
+
+  - intent: weight_loss_tips
+    examples: |
+      - How to lose weight safely
+      - Weight loss strategies that work
+      - Tips for healthy weight management
+      - Effective ways to shed pounds
+  - intent: exercise_suggestions
+    examples: |
+      - Recommend an exercise routine for beginners
+      - Effective workouts for burning calories
+      - How to stay motivated for regular exercise
+      - Suggest a home workout program
